@@ -34,26 +34,6 @@ class Nokia(Mobile):
         return f'Mobile Phone Detail: \nModel: {self.model} \nSIM Card Status: {self.cStatus} \nBalance: {self.balance} TK'
 
     def dialCall(self, num):
-        # for k, v in super().countryCodes.items():
-        #     if (k in super().countryCodes):
-        #         break
-        #     else:
-        #         Nokia.codeList.append(k)
-        # for i in Nokia.codeList:
-        #     if (self.cStatus == True):
-        #         pass
-        #         if (i in Nokia.codeList):
-        #             if (self.balance != 0):
-        #                 if (num not in self.dialCallHistory):
-        #                     self.dialCallHistory.append(num)
-        #                 return f'Dialling the number {num} to {super().countryCodes[i]} region'
-        #             else:
-        #                 return "Insufficient balance!"
-        #                 # break;
-        #         else:
-        #             return f'Dialling is not allowed in this region'
-        #     else:
-        #         return 'No SIM card available'
         if (self.cStatus == True):
             if (self.balance > 0):
                 for k, v in super().countryCodes.items():
