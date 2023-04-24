@@ -1,1 +1,1 @@
-self.sum/myList.count
+Ram
